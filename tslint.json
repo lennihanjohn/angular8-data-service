@@ -1,0 +1,81 @@
+{
+  "rules": {
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "ban-types": [true,
+      ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+      ["Function", "Avoid using the `Function` type. Use a specific function type, like `() => void`."],
+      ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+      ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+      ["String", "Avoid using the `String` type. Did you mean `string`?"],
+      ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+    ],
+    "class-name": true,
+    "curly": false,
+    "cyclomatic-complexity": false,
+    "file-name-casing": [
+      true,
+      {
+        ".component.ts": "kebab-case",
+        ".component.html": "kebab-case",
+        ".component.scss": "kebab-case"
+      }
+    ],
+    "indent": [true, "spaces", 2],
+    "max-line-length": [false, 200],
+    "no-any": false,
+    "no-console": [
+      true,
+      "log",
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-debugger": true,
+    "no-empty": false,
+    "no-irregular-whitespace": true,
+    "no-string-literal": false,
+    "no-submodule-imports": false,
+    "no-trailing-whitespace": false,
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "one-line": [false],
+    "only-arrow-functions": false,
+    "ordered-imports": false,
+    "prefer-const": false,
+    "prefer-object-spread": false,
+    "trailing-comma": false,
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "variable-name":
+    [
+      true,
+      "ban-keywords",
+      "allow-leading-underscore"
+    ],
+    "whitespace": [false]
+  },
+  "jsRules": {
+    "curly": true
+  },
+  "rulesDirectory": []
+}

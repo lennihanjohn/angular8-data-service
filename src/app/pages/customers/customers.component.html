@@ -1,0 +1,17 @@
+<p>The data are from https://jsonplaceholder.typicode.com/</p>
+
+<table id="customers">
+  <thead class="black white-text">
+    <tr>
+      <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let el of customers | async">
+      <td scope="row">{{el.id}}</td>
+      <td>{{el.name}}</td>
+      <td>{{el.username}}</td>
+      <td>{{el.email}}</td>
+    </tr>
+  </tbody>
+</table>
